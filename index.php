@@ -1,36 +1,36 @@
 <?php
     include __DIR__ . '/partials/script-php/home.php';
-    include __DIR__ . '/partials/templates/head_template.php';
+    include __DIR__ . '/partials/templates/head_templates.php';
 ?>
 
 <header>
     <div class="container">
-        <h1 class="text-center">Rooms - Home</h1>
+        <h1 class="text-center title">Rooms Hotel DB</h1>
     </div>
 </header>
 
 <main>
     <div class="container">
-        <table class="table table-hover col-md-4 offset-md-4">
+        <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col" class="text-center">Room number</th>
-                    <th scope="col"></th>
+                    <th>#</th>
+                    <th class="text-center">Room number</th>
+                    <th></th>
                 </tr>
             </thead>
 
             <tbody>
                 <?php foreach($rooms as $room) { ?>
                     <tr>
-                        <th scope="row">
+                        <th>
                             <?php echo $room['id']; ?>
                         </th>
                         <td class="text-center">
                             <?php echo $room['room_number']; ?>
                         </td>
                         <td class="text-info">
-                            <a href="show.php?id=<?php echo $room['id'];?>">View</a>
+                            <a href="show-page.php?id=<?php echo $room['id'];?>">View</a>
                         </td>
                     </tr>
                 <?php } ?>
@@ -40,5 +40,5 @@
 </main>
 
 <?php
-    include __DIR__ . '/partials/templates/footer.php'
+    include __DIR__ . '/partials/templates/footer_templates.php'
 ?>
