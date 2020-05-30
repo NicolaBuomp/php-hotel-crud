@@ -11,8 +11,7 @@
 
 <main>
     <div class="container text-center">
-        <table class="table mb-5 col-md-4 offset-md-4">
-            <thead>
+        <table class="table">
                 <tr>
                     <th>#</th>
                     <th>Room number</th>
