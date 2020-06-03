@@ -45,6 +45,10 @@
 
     </form>
 
+    <a class="btn btn-primary" href="<?php echo $base_path; ?>/show-page.php?id=<?php echo $room['id']; ?>">
+        Room Details
+    </a>
+
 </main>
 
 <?php
